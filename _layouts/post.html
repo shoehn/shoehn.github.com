@@ -1,0 +1,33 @@
+---
+layout: base
+---
+<h2>{{ page.title }}</h2>
+
+  {% if page.date != null %}
+    <span class="published_on quiet">
+      Published on {{ page.date | date: "%A, %B %d, %Y" }}
+
+      {% if page.tags != null %}
+        in
+        {% for tag in page.tags %}
+          {% if forloop.last and forloop.length > 1 %} and {% endif %}
+          <em>{{tag | downcase}}</em>{% if forloop.last == false and forloop.length > 2 %}, {% endif %}
+        {% endfor %}
+      {% endif %}
+     </span>
+   {% endif %}
+<span class="normal">
+{{ content }}
+</span>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+   var disqus_shortname = 'shoehn'; 
+   (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
