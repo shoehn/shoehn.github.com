@@ -22,3 +22,10 @@ control. This comes with two huge advantages: I can incrementally add
 features to my blog (currently it is only very rudimentary) and I can
 update the technical posts, e.g. if new software versions make my
 posts outdated.
+
+Setup is really very simple I will not repeat this here, a blog post
+on this can be found here
+<http://blog.envylabs.com/2009/08/publishing-a-blog-with-github-pages-and-jekyll/>
+
+I hope I will be able to post some of my former posts here in the next
+few days.
