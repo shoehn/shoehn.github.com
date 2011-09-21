@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Building blog based on Jekyll
+title: Functional Web Development
 ---
 
 <div class="span-24" align="center">
@@ -12,7 +12,7 @@ title: Building blog based on Jekyll
 </div>
 
 <div class="span-18 last">
-  {% for post in site.posts limit:5 %}
+  {% for post in site.posts %}
   <div class="post">
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <span class="normal">
